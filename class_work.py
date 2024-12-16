@@ -136,11 +136,24 @@ the_yoruba_dictionary={
     'wasser':'water',
     'kleidung':'clothes'
 }
-word = input('Enter a hausa word')
- if word in the_hausa_dictionary:
-   print('it translates to',the_hausa_dictionary[word])
-else:
-     print('this word is not yet in the hausa dictionary')
+def search_word(dictionary):
+    word = entry.get().lower()
+    if word in dictionary:
+        result_label.config(text=dictionary[word])
+    else:
+        result_label.config(text='word not found')
+
+root = tk.tk()
+root.title('The Sigma dictionary')
+
+entry = ttk.entry(root,width=40)
+entry.grid(row=0, column=0, padx=10, pady=0)
+
+ttk.Button(root, text='search hausa', command=lambda: search_word(the_hausa_dictionary)).grid(row=0, column=1, pady=10, padx=10)
+ttk.Button(root, text='search igbo',command=lambda: search_word(the_igbo_dictionary)).grid(row=0, column=2, pady=10, padx=10)
+ttk.Button(root, text='search yoruba', command=lambda : search_word(the_yoruba_dictionary)).grid(row=0, column=3, pady=10, padx=10)
+ttk.Button(root, text='search french',command=lambda :search_word(the_french_dictionary)).grid(row=0, column=4, pady=10, padx=10)
+ttk.Button(root, text='search spanish', command=lambda: search_word(the_spanish_dictionary)).grid(row=0, column=5, pady=10, padx=10)
 
        
 
