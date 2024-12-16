@@ -1,4 +1,4 @@
-import tkinter as tk
+ import tkinter as tk
 from tkinter import ttk
 
 
@@ -24,7 +24,7 @@ the_hausa_dictionary = {
     'wakar':'music',
     'keke':'bike'
 }
-the_igbo_dictionary={
+the_igbo_dictionary= 
     'ewu': 'goat',
     'mmiri': 'water',
     'niri': 'food',
@@ -68,7 +68,7 @@ the_yoruba_dictionary={
     'owo':'money',
     'eja':'fish'
 }
-the_spanish_dictionary={
+ the_spanish_dictionary={
     'musica':'music',
     'perro':'dog',
     'casa':'house',
@@ -91,7 +91,7 @@ the_spanish_dictionary={
     'trabajo':'work',
 
 }
-the_french_dictionary={
+ the_french_dictionary={
     'maison':'house',
     'ecole':'school',
     'chien':'dog',
@@ -114,7 +114,7 @@ the_french_dictionary={
     'eau':'water'
 
 }
-the_german_dictionary={
+ the_german_dictionary={
     'hallo':'hello',
     'danke':'thank you',
     'schwester':'sister',
@@ -139,5 +139,8 @@ the_german_dictionary={
 word = input('Enter a hausa word')
  if word in the_hausa_dictionary:
    print('it translates to',the_hausa_dictionary[word])
-# else:
-#     print('this word is not yet in the hausa dictionary')
+else:
+     print('this word is not yet in the hausa dictionary')
+
+       
+
